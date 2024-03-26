@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: first-pipeline # Executable ID (max length 64 lowercase-hyphen-separated), please modify this to any value if you are not the only user of your SAP AI Core instance. Example: `first-pipeline-1234`
+  name: yynhr-first-pipeline # Executable ID (max length 64 lowercase-hyphen-separated), please modify this to any value if you are not the only user of your SAP AI Core instance. Example: `first-pipeline-1234`
   annotations:
     scenarios.ai.sap.com/description: "Introduction to SAP AI Core"
     scenarios.ai.sap.com/name: "Tutorial"
@@ -11,9 +11,9 @@ metadata:
     scenarios.ai.sap.com/id: "learning"
     ai.sap.com/version: "1.0"
 spec:
-  entrypoint: mypipeline
+  entrypoint: yynhr-mypipeline
   templates:
-  - name: mypipeline
+  - name: yynhr-mypipeline
     steps:
     - - name: greet
         template: greeter
